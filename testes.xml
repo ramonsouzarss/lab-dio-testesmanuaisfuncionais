@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>SWAG</projectKey>
+    <exportDate>2023-11-01 22:54:15 UTC</exportDate>
+    <folders>
+        <folder fullPath="Login" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="106931341" key="SWAG-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ramon Souza</createdBy>
+            <createdOn>2023-11-01 22:23:44 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente sem cadastro tenta fazer login]]></name>
+            <objective><![CDATA[Funcionalidade de login]]></objective>
+            <owner>712020:db72a62d-2edf-42ab-b5aa-809a925173c3</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela de login
+
+And adicione um username não cadastrado
+
+When clicar em 'criar conta'
+
+Then uma mensagem surgirá avisando que a conta não existe]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="106931298" key="SWAG-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Ramon Souza</createdBy>
+            <createdOn>2023-11-01 22:15:06 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente sem cadastro deseja criar uma conta]]></name>
+            <objective><![CDATA[Verificar funcionalidade de login]]></objective>
+            <owner>712020:db72a62d-2edf-42ab-b5aa-809a925173c3</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela de login
+
+And não esteja cadastrado no sistema
+
+When clicar em 'criar conta'
+
+Then será redirecionado para uma tela de criação de conta]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
